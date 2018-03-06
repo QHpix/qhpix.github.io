@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: QHpix
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars3.githubusercontent.com/u/26481794?s=400&u=8a70002a952b0ed2d16c84c26e0860ea039a27e7&v=4
 
 #
 # Flags below are optional
@@ -18,10 +18,10 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: 
   facebook:
   flickr:
-  github: barryclark/jekyll-now
+  github: https://github.com/QHpix
   instagram:
   linkedin:
   pinterest:

@@ -4,12 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
+High school student interested in information security.
+Mostly interested in penetration testing and binary exploitation.
 ### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
+Current languages i am able to code in:
+..*
+C
+C++
+Assembly x86 32
+Python
+Web languages (HTML, CSS, JS)
+..*
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[pix3l@bugcrowdninja.com](mailto:pix3l@bugcrowdninja.com)
