@@ -7,7 +7,7 @@ This writeup is split into multiple parts.
 ip: 192.168.21.129
 [Pinky's Palace v2](https://www.vulnhub.com/entry/pinkys-palace-v2,229/)
 
-##Information Gathering
+###Information Gathering
 
 First, I started an nmap scan:
 ```
@@ -40,7 +40,8 @@ I tried to connect all of those ports with netcat, but got the connection refuse
 After a long time scratching my head, i figured that I maybe need to connect to all the ports in some weird way.
 So I searched for `port sequence` on duckduckgo and it showed a portion of a wikipedia page.
 [wiki link](https://en.wikipedia.org/wiki/Port_knocking)
-##Port knocking
+
+###Port knocking
 I made a script to try all possible combinations:
 ```
 import socket
@@ -152,5 +153,5 @@ It was just a page with a link to login.php
 So I downloaded that as well.
 In that was a link to a new location: http://pinkydb:7654/pageegap.php?1337=filesselif1001.php
 
-#Breaking in
+###Breaking in
 This will be in the next part of my writeup
