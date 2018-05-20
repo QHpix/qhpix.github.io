@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pinky's Palace v2 Reconnaissanse and more
+title: Pinkys Palace v2 Reconnaissanse
 ---
 
 This writeup is split into multiple parts.
