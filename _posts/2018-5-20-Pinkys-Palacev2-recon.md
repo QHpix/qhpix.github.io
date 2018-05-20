@@ -9,7 +9,7 @@ ip: 192.168.21.129
 
 ##Information Gathering
 
-I started with a nmap scan:
+First, I started an nmap scan:
 ```
 nmap -sV -v 192.168.21.129 -p-
 ports:
@@ -18,12 +18,11 @@ ports:
 7654/tcp  filtered unknown
 31337/tcp filtered Elite
 ```
-I went to the website, and immidiately saw that it was a wordpress site.
-In the network tab I saw requests being made to http://pinkydb/
-So I put `192.168.21.129 pinkydb` into `/etc/hosts`.
+I went to the website, and immediately saw that it was a wordpress site.
+In the network tab, I saw requests being made to `http://pinkydb/`, so I put `192.168.21.129 pinkydb` into `/etc/hosts`.
 I tried to look at robots.txt, but I didn't find anything.
-After that I looked at the blog posts, and found the username: pinky1337.
-I used dirb to map the site, `dirb http://pinkydb/ /usr/share/wordlists/dirb/common.txt` and found some interesting things:
+After that I looked at the blog posts  and found the username: pinky1337.
+I used dirb to map the site: dirb http://pinkydb/ /usr/share/wordlists/dirb/common.txt and found some interesting things:
 ```
 http://pinkydb/secret/
 http://pinkydb/xmlrpc.php
@@ -81,7 +80,7 @@ It was scapy, [https://scapy.net](https://scapy.net).
 I stopped for the day and continued the day after.
 After searching for hours on the internet for a better and simpler way to get all possible combinations I found permutations from itertools.
 So I went to edit my script:
-```
+``
 from scapy.all import IP, TCP, send
 import itertools
 import sys
@@ -113,7 +112,7 @@ def knockKnock(ip, port):
 
 if __name__ == "__main__":
     main()
-```
+``
 After running it multiple times: `python Qipk.v2.py 192.168.21.129 666:7000:8890`, it seemed to have worked.
 The nmap output was different than before:
 ```
