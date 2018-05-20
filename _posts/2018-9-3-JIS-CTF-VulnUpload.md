@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JIS-CTF: VulnUpload Writeup
+title: JIS-CTF VulnUpload
 ---
 This is how i completed JIS-CTF: VulnUpload.
 This vm was released on the 8th of March 2018.
