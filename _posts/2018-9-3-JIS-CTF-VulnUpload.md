@@ -2,11 +2,13 @@
 layout: post
 title: JIS-CTF VulnUpload
 ---
+
 This is how i completed JIS-CTF: VulnUpload.
 This vm was released on the 8th of March 2018.
 [JIS-CTF:VulnUpload](https://www.vulnhub.com/entry/jis-ctf-vulnupload,228/)
 This box was a bit harder for me to secure than DeIce was, but i did the best i could.
 The ip is determined by DHCP.
+
 ### Information Gathering
 I first started with scanning for open host since ips were given by dhcp.
 `for i in $(seq 3 254);do ping -t 1 -w 1 192.168.1.$i | grep 'bytes from'; done`
