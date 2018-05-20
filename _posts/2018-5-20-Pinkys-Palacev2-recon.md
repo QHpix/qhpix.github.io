@@ -7,7 +7,7 @@ This writeup is split into multiple parts.
 ip: 192.168.21.129
 [Pinky's Palace v2](https://www.vulnhub.com/entry/pinkys-palace-v2,229/)
 
-###Information Gathering
+### Information Gathering
 
 First, I started an nmap scan:
 ```
@@ -81,7 +81,7 @@ It was scapy, [https://scapy.net](https://scapy.net).
 I stopped for the day and continued the day after.
 After searching for hours on the internet for a better and simpler way to get all possible combinations I found permutations from itertools.
 So I went to edit my script:
-``
+```
 from scapy.all import IP, TCP, send
 import itertools
 import sys
@@ -113,7 +113,7 @@ def knockKnock(ip, port):
 
 if __name__ == "__main__":
     main()
-``
+```
 After running it multiple times: `python Qipk.v2.py 192.168.21.129 666:7000:8890`, it seemed to have worked.
 The nmap output was different than before:
 ```
@@ -153,5 +153,5 @@ It was just a page with a link to login.php
 So I downloaded that as well.
 In that was a link to a new location: http://pinkydb:7654/pageegap.php?1337=filesselif1001.php
 
-###Breaking in
+### Breaking in
 This will be in the next part of my writeup
