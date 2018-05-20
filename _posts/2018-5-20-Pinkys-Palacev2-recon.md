@@ -7,8 +7,9 @@ This writeup is split into multiple parts.
 ip: 192.168.21.129
 [Pinky's Palace v2](https://www.vulnhub.com/entry/pinkys-palace-v2,229/)
 
-#Information Gathering
-First I started an nmap scan:
+##Information Gathering
+
+I started with a nmap scan:
 ```
 nmap -sV -v 192.168.21.129 -p-
 ports:
