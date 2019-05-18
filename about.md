@@ -17,4 +17,4 @@ Web languages (HTML, CSS, JS)
 ..*
 ### Contact me
 
-[pix3l@bugcrowdninja.com](mailto:pix3l@bugcrowdninja.com)
+[qhpix@wearehackerone.com](mailto:qhpix@wearehackerone.com)
